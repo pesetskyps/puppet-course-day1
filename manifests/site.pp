@@ -23,6 +23,12 @@ node default {
       httpd::vhost { 'puppettest2.com':
         name => 'puppettest2.com'
       }
+<<<<<<< HEAD
+=======
+      httpd::vhost { 'puppettest3.com':
+        name => 'puppettest.com'
+      }
+>>>>>>> 24293bd345e636dde8c7a6b6353d49751a93dca1
 
     }
     default: {

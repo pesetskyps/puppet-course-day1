@@ -7,6 +7,7 @@ node default {
   #   owner => 'root',
   #   group => 'root'
   # }
+
   case $osfamily {
     'Ubuntu','Debian': {
       notify { 'Debian systems': }
@@ -18,9 +19,11 @@ node default {
       httpd::vhost { 'puppettest1.com':
         name => 'puppettest1.com',
       }
+
       httpd::vhost { 'puppettest2.com':
         name => 'puppettest2.com'
       }
+
     }
     default: {
       notify { 'I don\'t know what kind of system you have!': }
